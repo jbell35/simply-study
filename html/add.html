@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Add Task</title>
+</head>
+<body>
+    
+    
+    <div class="formContainer">
+        <form action="" class="addForm">
+            <label for="subject">Subject Name:</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter Subject Name">
+
+            <label for="task">Task Name:</label>
+            <input type="text" id="task" name="task" placeholder="Enter Task Name">
+
+            <label id="diff">Level of Difficulty:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="difficulty" value="Easy" id="easy"> Easy</label>
+                <label><input type="radio" name="difficulty" value="Medium" id="medium"> Medium</label>
+                <label><input type="radio" name="difficulty" value="Hard" id="hard"> Hard</label>
+            </div>
+
+            <label for="description" id="descr">Provide a description (optional):</label>
+            <textarea name="description" id="description" rows="5" placeholder="Describe the task..."></textarea>
+
+            <input type="submit" id="submitBtn" value="Add Task">
+        </form>
+    </div>
+    
+
+</body>
+</html>
