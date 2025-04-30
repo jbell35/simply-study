@@ -18,11 +18,9 @@ body {
     background-color: rgba(45, 45, 45, 0.53);
 }
 
-
 .navbar, .nav {
     margin: 0;
-    padding: 0;
-    
+    padding: 0; 
 }
 
 .nav-item {
@@ -30,7 +28,6 @@ body {
     width: 12em;
     border-radius: 6px;
     margin-left: 15px;
-    
 }
 
 .nav-item:hover {
@@ -49,11 +46,10 @@ body {
     color: white;
 }
 
-#dash, #task {
+#dash, #task, #analytic {
     height: 20px;
     width: 20px;
-    margin-right: 10px;
-    
+    margin-right: 10px; 
 }
 
 #sslogo {
@@ -62,4 +58,113 @@ body {
     display: block;
     margin-bottom: 0.5em; /* adds consistent spacing */
 }
-  
+
+.container {
+    border: 2px solid yellow;
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.search {
+    border: 2px solid purple;
+    height: 7em;
+}
+
+.cards-container {
+    border: 2px solid pink;
+    height: 20em;
+}
+
+.chart {
+    border: 2px solid lightblue;
+    height: 26em;
+}
+
+.container2 {
+    border: 2px solid red;
+    width: 17em;
+    background-color: rgba(45, 45, 45, 0.419);
+}
+
+#formContainer {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    background-color: #FFFF;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 30em;
+    
+}
+
+.addForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.addForm label {
+    font-weight: 600;
+    color: #333333;
+}
+
+.addForm input[type="text"],
+.addForm textarea {
+    padding: 0.8em;
+    border: 1px solid #cdcdcd;
+    border-radius: 0.5em;
+    font-size: 1em;
+    margin-bottom: 1em;
+    width: 50px;
+    
+    
+}
+
+.addForm input[type="text"] {
+    height: 1em;
+    width: auto;
+}
+
+.addForm textarea{
+    width: auto;
+    height: 5em;
+}
+
+#diff {
+    margin-top: 15px;
+}
+
+#descr {
+    margin-top: 18px;
+    width: auto;
+}
+
+.addForm input[type="date"]{
+    height: 1.5em;
+}
+
+.addForm input[type="radio"] {
+    margin-right: 0.5em;
+    margin-left: 20px;
+}
+
+#submitBtn {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    padding: 0.8em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /*smoother transition*/
+
+}
+
+#submitBtn:hover {
+    background-color: #2575fc;
+}

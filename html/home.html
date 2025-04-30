@@ -8,6 +8,30 @@
     <title>Home | Task Board</title>
 </head>
 <body class="bg-black">
+    <div class="formContainer" id="formContainer">
+        <form action="" class="addForm">
+            <label for="subject">Subject Name:</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter Subject Name" required>
+
+            <label for="task">Task Name:</label>
+            <input type="text" id="subject" name="task" placeholder="Enter Task Name" required>
+
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate" name="task" placeholder="Choose a date" required>
+
+            <label id="diff">Level of Difficulty:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="difficulty" value="Easy" id="easy"> Easy</label>
+                <label><input type="radio" name="difficulty" value="Medium" id="medium"> Medium</label>
+                <label><input type="radio" name="difficulty" value="Hard" id="hard"> Hard</label>
+            </div>
+
+            <label for="description" id="descr">Provide a description (optional):</label>
+            <textarea name="description" id="description" rows="5" placeholder="Describe the task..."></textarea>
+
+            <button id="submitBtn" type="submit">Add Task</button>
+        </form>
+    </div>
     <nav class="navbar">
         <ul class="nav">
             <img src="../assets/sslogo2.png" id="sslogo">
@@ -15,20 +39,31 @@
               <a class="nav-link active" aria-current="page" href="#"> <img id="dash" src="../assets/dashboard.png"> Dashboard</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> <img id="task" src="../assets/analytics.png">Analytics</a>
+              <a class="nav-link" href="#"> <img id="analytic" src="../assets/analytics.png"> Analytics</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../html/add.html"> <img id="task" src="../assets/task.png"> Add Task</a>
+              <a class="nav-link" id="open-link" onclick="openForm()"> <img id="task" src="../assets/task.png"> Add Task</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" >Disabled</a>
+              <a class="nav-link" href="#" > Daily Affirmation </a>
             </li>
           </ul>
     </nav>
     <div class="container">
+        <div class="search">
+
+        </div>
+        <div class="cards-container">
+            <!--inject JS assignment cards here-->
+        </div>
+        <div class="chart">
+
+        </div>
+    </div>
+    <div class="container2">
 
     </div>
 
-    <script src="../javascript/index.js"></script>
+    <script src="../javascript/home.js"></script>
 </body>
 </html>
