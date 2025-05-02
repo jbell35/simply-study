@@ -52,11 +52,15 @@ const getTask = () => {
 
 }
 
-const submitBtn = document.getElementById("submitBtn");
 //submit button actions
-submitBtn.addEventListener('click', (event) => {
+document.getElementById("submitBtn").addEventListener('click', (event) => {
     event.preventDefault();
     closeForm();
     getTask();
     document.getElementById("theForm").reset();
-})
+});
+
+document.getElementById("closeBtn").addEventListener('click', (event)  => {
+    event.preventDefault();
+    closeForm();
+});

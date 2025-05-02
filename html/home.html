@@ -10,6 +10,7 @@
 <body class="bg-black">
     <div id="blur">
         <div class="formContainer" id="formContainer">
+            <button id="closeBtn">x</button>
             <form action="" class="addForm" id="theForm">
                 <label for="subject">Subject Name:</label>
                 <input type="text" id="subject" name="subject" placeholder="Enter Subject Name" required>
@@ -39,7 +40,7 @@
         <ul class="nav">
             <img src="../assets/sslogo2.png" id="sslogo">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"> <img id="dash" src="../assets/dashboard.png"> Dashboard</a>
+              <a class="nav-link active" aria-current="page" href="../html/home.html"> <img id="dash" src="../assets/dashboard.png"> Dashboard</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"> <img id="analytic" src="../assets/analytics.png"> Analytics</a>
@@ -54,15 +55,17 @@
     </nav>
     <div class="container">
         <div class="search">
-
+            <div>
+                <h2>DashBoard</h2>
+            </div>
+            <div id="searchBar">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  </form>
+            </div>
         </div>
         <div class="cards-container" id="cardsCont">
             <!--inject JS assignment cards here-->
-            
-            
-            
-            
-            
             
         </div>
         <div class="chart">

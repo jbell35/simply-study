@@ -71,7 +71,11 @@ body {
 .search {
     border: 2px solid purple;
     height: 7em;
+    display: flex;
+    flex: row;
 }
+
+
 
 .cards-container {
     border: 2px solid pink;
@@ -133,12 +137,23 @@ body {
     top: 20%;
     left: 40%;
     background-color: #FFFF;
-    padding: 2em;
+    padding: .5em 2em 0em 2em;
     border-radius: 1em;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
     width: 400px;
     height: 30em;
     
+}
+
+#closeBtn{
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    padding: 0.2em;
+    width: 2em;
+    font-size: 12px;
+    border-radius: 0.5em;
+    margin-left: 27em;
 }
 
 
