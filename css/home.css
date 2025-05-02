@@ -93,6 +93,12 @@ body {
     gap: 2rem;
     padding: 1rem;
     background-color: rgb(244, 244, 244); 
+    min-height: 18em;
+    
+}
+
+#noTasksMessage {
+    margin-top: 4em;
 }
 
 .task-card {
@@ -104,6 +110,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
     padding: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     color: rgb(255, 255, 255);
     font-family: 'Segoe UI', sans-serif;
 }
