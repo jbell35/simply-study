@@ -13,6 +13,8 @@ function closeForm(){
 
 //take input from the form and display
 const getTask = () => {
+    document.getElementById("noTasksMessage").style.display = "none";
+
     const container = document.createElement("div");
     container.classList = "task-card";
 
@@ -52,7 +54,7 @@ const getTask = () => {
 
 }
 
-//submit button actions
+//submit form button actions
 document.getElementById("submitBtn").addEventListener('click', (event) => {
     event.preventDefault();
     closeForm();
@@ -60,7 +62,12 @@ document.getElementById("submitBtn").addEventListener('click', (event) => {
     document.getElementById("theForm").reset();
 });
 
+// close form button actions
 document.getElementById("closeBtn").addEventListener('click', (event)  => {
     event.preventDefault();
     closeForm();
 });
+
+if (document.getElementById("cardsCont").children.length === 0){
+    document.getElementById("noTasksMessage").style.display = "block";
+}
