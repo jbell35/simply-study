@@ -8,30 +8,33 @@
     <title>Home | Task Board</title>
 </head>
 <body class="bg-black">
-    <div class="formContainer" id="formContainer">
-        <form action="" class="addForm">
-            <label for="subject">Subject Name:</label>
-            <input type="text" id="subject" name="subject" placeholder="Enter Subject Name" required>
-
-            <label for="task">Task Name:</label>
-            <input type="text" id="subject" name="task" placeholder="Enter Task Name" required>
-
-            <label for="dueDate">Due Date:</label>
-            <input type="date" id="dueDate" name="task" placeholder="Choose a date" required>
-
-            <label id="diff">Level of Difficulty:</label>
-            <div class="radio-group">
-                <label><input type="radio" name="difficulty" value="Easy" id="easy"> Easy</label>
-                <label><input type="radio" name="difficulty" value="Medium" id="medium"> Medium</label>
-                <label><input type="radio" name="difficulty" value="Hard" id="hard"> Hard</label>
-            </div>
-
-            <label for="description" id="descr">Provide a description (optional):</label>
-            <textarea name="description" id="description" rows="5" placeholder="Describe the task..."></textarea>
-
-            <button id="submitBtn" type="submit">Add Task</button>
-        </form>
+    <div id="blur">
+        <div class="formContainer" id="formContainer">
+            <form action="" class="addForm" id="theForm">
+                <label for="subject">Subject Name:</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter Subject Name" required>
+    
+                <label for="task">Task Name:</label>
+                <input type="text" id="taskInput" name="subject" placeholder="Enter Task Name" required>
+    
+                <label for="dueDate">Due Date:</label>
+                <input type="date" id="dueDate" name="task" placeholder="Choose a date" required>
+    
+                <label id="diff">Level of Difficulty:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="difficulty" value="Easy" id="easy"> Easy</label>
+                    <label><input type="radio" name="difficulty" value="Medium" id="medium"> Medium</label>
+                    <label><input type="radio" name="difficulty" value="Hard" id="hard"> Hard</label>
+                </div>
+    
+                <label for="description" id="descr">Provide a description (optional):</label>
+                <textarea name="description" id="description" rows="5" placeholder="Describe the task..."></textarea>
+    
+                <button id="submitBtn" type="submit">Add Task</button>
+            </form>
+        </div>
     </div>
+    
     <nav class="navbar">
         <ul class="nav">
             <img src="../assets/sslogo2.png" id="sslogo">
@@ -55,6 +58,17 @@
         </div>
         <div class="cards-container">
             <!--inject JS assignment cards here-->
+            <div class="task-card">
+                <h3 id="taskName"></h3>
+                <h4 id="className"></h4>
+                <p id="tDesc"></p>
+                <p id="tDate"></p>
+            </div>
+            
+            
+            
+            
+            
         </div>
         <div class="chart">
 

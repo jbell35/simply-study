@@ -76,6 +76,44 @@ body {
 .cards-container {
     border: 2px solid pink;
     height: 20em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.task-card {
+    display: flex;
+    flex-direction: column;
+    width: 12em;
+    height: 12em;
+    background-color: rgb(55, 55, 55);
+    margin-left: 30px;
+    border-radius: 4px;
+    align-self: center;
+    padding: 10px 5px 5px 5px;
+}
+
+#taskName {
+    font-size: 22px;
+    color: white;
+}
+
+#className {
+    font-size: 10px;
+    color: white;
+}
+
+#tDesc {
+    margin-top: 20px;
+    font-size: 12px;
+    color: white;
+}
+
+#tDate {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
 }
 
 .chart {
@@ -103,6 +141,8 @@ body {
     
 }
 
+
+
 .addForm {
     display: flex;
     flex-direction: column;
@@ -119,10 +159,8 @@ body {
     border: 1px solid #cdcdcd;
     border-radius: 0.5em;
     font-size: 1em;
-    margin-bottom: 1em;
-    width: 50px;
-    
-    
+    margin-bottom: 1em; 
+
 }
 
 .addForm input[type="text"] {
